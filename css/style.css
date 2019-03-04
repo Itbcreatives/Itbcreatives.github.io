@@ -1,0 +1,465 @@
+@charset "UTF-8";
+/* CSS Document */
+@font-face {
+font-family: 'AmericanTypewriter';
+font-style: normal;
+font-weight: normal;
+src: url(../fonts/american-typewriter-cufonfonts-webfont/ufonts.com_american-typewriter.woff) format('woff');
+}
+body, html {
+	height: 10000px;
+	width: 100%;
+}
+	
+article, cite, blockquote, section, footer, header, nav, section {
+	display: block;
+}
+
+/* Page structure & Typography*/
+
+html { 
+	overflow-y: scroll; /* always force a scrollbar in non-IE */
+	}
+body {
+	background: url(../images/kitchen.png) top 50px left 0px no-repeat, url(../images/ground.png) top 6000px left 0px no-repeat, url(../images/clouds.png) repeat;
+}
+/*NAV BAR*/
+#leaplogo {
+	width: 60px;
+	top: 5px;
+	position: absolute;
+	left: 120px;
+}
+nav	{
+	z-index: 4;
+	position: fixed;
+	top: 0px;
+	background-color: #BFDDF2;
+	width: 100%;
+	}
+
+nav ul	{list-style-type: none;}
+
+nav ul li	{
+	display: inline;
+	font-family: "AmericanTypewriter";
+}
+
+nav ul li a	{
+	color: #ffffff;
+	text-decoration: none;
+	padding: 0 20px;}
+	
+nav	ul li a:hover	{color: #ff7bac;}
+
+nav	ul li a.active	{color: #16a6b6;}
+
+#primary {
+	text-align: center;
+}
+
+/*LEAP CARD*/	
+#leapc {
+	position: fixed;
+	width: 300px;
+    top: 30%;
+	left: 550px;
+	z-index: 1;
+}
+
+/*IMAGETRANSITIONS*/
+img {
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+}
+
+/*SCENE POSITION*/
+#scene1 {
+	position: absolute;
+	top: 800px;
+}
+#scene2 {
+	position: absolute;
+	top: 1100px;
+	display: block;
+}
+#scene3 {
+	position: absolute;
+	top: 2300px;
+	display: block;
+}
+#scene4 {
+	position: absolute;
+	top: 4000px;
+	display: block;
+}
+#scene5 {
+	position: absolute;
+	top: 5000px;
+	display: block;
+}
+#scene6 {
+	position: absolute;
+	top: 6000px;
+	display: block;
+}
+#scene7 {
+	position: absolute;
+	top: 7500px;
+	display: block;
+}
+#scene8 {
+	position: absolute;
+	top: 9000px;
+	display: block;
+}
+
+
+/*SCENE 1 IMAGES*/
+#bmonster {
+	width: 300px;
+	top: 400px;
+	left: 950px;
+	display: block;
+	position: absolute;
+	z-index: 2;
+	-webkit-animation-name: wow BounceInRight;
+	-webkit-animation-duration: 2.5s;
+	-moz-animation-name: wow BounceInRight;
+	-moz-animation-duration: 2.5s;
+	-ms-animation-name: wow BounceInRight;
+	-ms-animation-duration: 2.5s;
+	
+}
+#mmonster {
+	display: block;
+	position: absolute;
+	top: 320px;
+	width: 400px;
+	z-index: 2;
+	-webkit-animation-name: wow BounceInLeft;
+	-webkit-animation-duration: 2s;
+	-moz-animation-name: wow BounceInLeft;
+	-moz-animation-duration: 2s;
+	-ms-animation-name: wow BounceInLeft;
+	-ms-animation-duration: 2s;
+	}
+#speech {
+	display: block;
+	position: absolute;
+	top: 150px;
+	left: 210px;
+	width: 270px; 
+	z-index: 2;
+	-webkit-animation-name: wow Bounce;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-delay: 1s;
+	-webkit-animation-iteration-count: 5s;
+	-moz-animation-name: wow Bounce;
+	-moz-animation-duration: 3s;
+	-moz-animation-delay: 1s;
+	-moz-animation-iteration-count: infinite;
+	-ms-animation-name: wow Bounce;
+	-ms-animation-duration: 3s;
+	-ms-animation-delay: 1s;
+	-ms-animation-iteration-count: infinite;
+}
+#frame {
+	position: absolute;
+	left: 1090px;
+	top: 60px;
+	width: 255px;
+	-webkit-animation-name: wow Swing;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-name: wow Swing;
+	-moz-animation-duration: 5s;
+	-moz-animation-iteration-count: infinite;
+	-ms-animation-name: wow Swing;
+	-ms-animation-duration: 5s;
+	-ms-animation-iteration-count: infinite;
+}
+
+/*SCENE 2 IMAGES*/
+#confused {
+	width: 360px;
+	left: 507px;
+	top: 440px;
+	margin: auto;
+	position: absolute;
+	display: block;
+	-webkit-animation-name: wow BounceInUp;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-delay: 0.5s;
+	-moz-animation-name: wow BounceInUp;
+	-moz-animation-duration: 1s;
+	-moz-animation-delay: 0.5s;
+	-ms-animation-name: wow BounceInUp;
+	-ms-animation-duration: 1s;
+	-ms-animation-delay: 0.5s;
+}
+#think {
+	position: absolute;
+	left: 850px;
+	width: 500px;
+	top: 170px;
+}
+
+
+/*SCENE 3 IMAGES*/
+#bus {
+	top: 350px;
+	position: absolute;
+	width: 580px;
+	z-index: 1;
+}
+#road1 {
+	position: relative;
+	top: 480px;
+}
+#sign {
+	position: absolute;
+	top: 152px;
+	left: 1100px;
+	width: 300px;
+}
+#sign:hover {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+
+/*SCENE 4 IMAGES*/
+#busstop {
+	position: absolute;
+	display: block;
+	left: 1275px;
+	height: 400px;
+	top: 97px;
+}
+#speech2 {
+	position: relative;
+	top: 125px;
+}
+#friend  {
+	position: absolute;
+	display: block;
+	width: 200px;
+	left: 999px;
+	top: 179px;
+}
+#road {
+     display: block;
+	 top: 280px;
+	 position: relative;
+	 width: 100%;
+	z-index: 2;
+}
+
+
+/*SCENE 5 IMAGES*/
+#busstop2 {
+	position: absolute;
+	display: block;
+	left: 1275px;
+	height: 400px;
+	top: 117px;
+}
+#speech3 {
+	position: relative;
+	left: 950px;
+	width: 200px;
+	top: 150px;
+	z-index: 2;
+	-webkit-animation-name: wow bounce;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-delay: 0.5s;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-name: wow bounce;
+	-moz-animation-duration: 2s;
+	-moz-animation-delay: 0.5s;
+	-moz-animation-iteration-count: infinite;
+	-ms-animation-name: wow bounce;
+	-ms-animation-duration: 2s;
+	-ms-animation-delay: 0.5s;
+	-ms-animation-iteration-count: infinite;
+	
+}
+#friend2 {
+	position: absolute;
+	display: block;
+	width: 200px;
+	left: 1075px;
+	top: 195px;
+	z-index: 3;
+}
+#monster2 {
+	position: absolute;
+	width: 200px;
+	left: 840px;
+	top: 317px;
+	z-index: 2;
+}
+#road3 {
+	display: block;
+	 top: 400px;
+	 position: relative;
+	 width: 100%;
+	 z-index: -1;
+}
+#ask {
+	position: absolute;
+	top: 280px;
+	left: 80px;
+	width: 400px;
+}
+#ask:hover {
+	-moz-transform: rotate(40deg) scale(1.2);
+	-webkit-transform: rotate(40deg) scale(1.2);
+	-ms-transform: rotate(40deg) scale(1.2);
+	transform: rotate(40deg) scale(1.2);
+}
+/*SCENE 6 IMAGES*/
+#phone {
+	position: absolute;
+	left: 565px;
+	top: 240px;
+	width: 330px;
+	z-index: 2;
+}
+#friendhand {
+	position: absolute;
+	left: 800px;
+	width: 1100px;
+	top: 305px;
+}
+#monsterhand {
+	position: absolute;
+	top: 250px;
+	width: 850px;
+	left: -150px;
+}
+#speech7 {
+	position: absolute;
+	top: 90px;
+	left: 950px;
+}
+#speech8 {
+	position: absolute;
+	width: 400px;
+	top: 90px;
+		-webkit-animation-name: wow SlideInLeft;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-delay: 0.3s;
+	-moz-animation-name: wow SlideInLeft;
+	-moz-animation-duration: 1s;
+	-moz-animation-delay: 0.3s;
+	-ms-animation-name: wow SlideInLeft;
+	-ms-animation-duration: 1s;
+	-ms-animation-delay: 0.3s;
+	
+}
+
+/*SCENE 7 IMAGES*/
+#busstop3 {
+	position: absolute;
+	display: block;
+	left: 375px;
+	height: 400px;
+	top: 150px;
+	z-index: 2;
+}
+#speech6 {
+	position: absolute;
+	width: 300px;
+	left: 97px;
+	top: 110px;
+	
+}
+#friend3 {
+	position: absolute;
+	width: 200px;
+	top: 229px;
+	left: 195px;
+	z-index: 2;
+}
+#monster3 {
+	position: absolute;
+	width: 200px;
+	top: 350px;
+	z-index: 2;
+}
+#road4 {
+	position: absolute;
+	top: 550px;
+	z-index: 1;
+	
+}
+#bus3 {
+	top: 380px;
+	left: 800px;
+	position: absolute;
+	width: 900px;
+	z-index: 3;
+}
+#speech6:hover {
+	-moz-transform: scale(1.1) translate(20px, 0px);
+	-webkit-transform: scale(1.1) translate(20px, 0px);
+	-ms-transform: scale(1.1) translate(20px, 0px);
+	transform: scale(1.1) translate(20px, 0px);
+}
+
+
+/*SCENE 8 IMAGES*/
+#bus2 {
+	top: 450px;
+	position: absolute;
+	width: 580px;
+	z-index: 1;
+}
+#road2 {
+	top: 570px;
+	position: absolute;
+}
+#info {
+	width: 500px;
+	left: 900px;
+	top: 260px;
+	position: absolute;
+}
+#info:hover {
+	-moz-transform:translate(0px, 50px);
+	-webkit-transform:translate(0px,50px);
+	-ms-transform:translate(0px,50px);
+	transform:translate(0px,50px);
+}
+#download {
+	position: absolute;
+	top: 200px;
+	left: 80px;
+	-webkit-animation-name: wow bounce;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-delay: 0.5s;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-name: wow bounce;
+	-moz-animation-duration: 2s;
+	-moz-animation-delay: 0.5s;
+	-moz-animation-iteration-count: infinite;
+	-ms-animation-name: wow bounce;
+	-ms-animation-duration: 2s;
+	-ms-animation-delay: 0.5s;
+	-ms-animation-iteration-count: infinite;
+	
+}
+footer {
+	position: absolute;
+	display: block;
+	top: 9800px;
+	left: 600px;
+	font-family: "AmericanTypewriter";
+	text-align: center;
+}
