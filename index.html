@@ -1,124 +1,143 @@
-<!doctype html>
-<html>
+﻿<!doctype html>
+<html class="no-js">
 <head>
-<meta charset="UTF-8">
-<title>How To Top up a Leap Card</title>
-<link href="css/style.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="css/animate.css">
+<title>Cycle for life</title>
+<meta charset="utf-8" />
+<meta name="description" content="A parallax scrolling experiment using jQuery" />
+<link rel="stylesheet" href="css/style.css" />
 <!-- modernizr is a detection library  -->
 <script src="js/modernizr.custom.39871.js"></script> 
 <!-- jQuery library - saved locally -->
 <script src="js/jquery-1.6.1.min.js"></script>
 <!-- The script below is the only one you need to edit --> 
 <script src="js/parallax.js"></script>
-	<script src="js/wow.js"></script>
-              
-	<script>
-              new WOW().init();
-              
-	</script>
+
 </head>
 
 <body>
-	<!--NAVBAR-->
+
+<!-- navigation -->
 <nav id="primary">
-	<img id="leaplogo" src="images/leaplogo.png" alt="leapcard">
     <ul>
-        <li><a class="scene1" href="#scene1">Off to School</a></li>
-        <li><a class="scene2" href="#scene2">Confused</a></li>
-        <li><a class="scene3" href="#scene3">Bus Passing</a></li>
-        <li><a class="scene4" href="#scene4">Meeting a Friend</a></li>
-		<li><a class="scene5" href="#scene5">Getting Help</a></li>
-		<li><a class="scene6" href="#scene6">How To</a></li>
-        <li><a class="scene7" href="#scene7">Bus Comes</a></li>
-        <li><a class="scene8" href="#scene8">Bus Leaving</a></li>
+        <li><a class="panel1" href="#panel1">Cycle for life</a></li>
+        <li><a class="panel2" href="#panel2">Benefits of Cycling</a></li>
+        <li><a class="panel3" href="#panel3">fitness apps</a></li>
+        <li><a class="panel4" href="#panel4">Toxic Emissions</a></li>
+		<li><a class="panel5" href="#panel5">Budget saving</a></li>
+		<li><a class="panel6" href="#panel6">Page information</a></li>
     </ul>
 </nav>
-	
-	<!--LEAP CARD-->
-	<img id="leapc" src="images/leapcard.png" alt="leap card">
-	
-	<!--MONSTER ENTER/SCENE1-->
+<!-- /navigation -->
 
-<section>
-	<div id="scene1">
-		<img id="bmonster" class="wow bounceInRight" src="images/monster.png" alt="Baby Monster">
-		<img id="mmonster" class="wow bounceInLeft" src="images/mom.png" alt="Mummy Monster">
-		<img id="speech" class="wow bounceIn" src="images/getthebus.png" alt="Get The Bus">
-		<img id="frame" class="wow swing" src="images/pictureframe.png" alt="Frame">
-	</div>
+<!-- Scene 1 -->
+<section id="panel1">
+	<div class="content">
+		<h1 id="title">Cycling for life</h1>
+		<p id="title2">Get out and help the environment and grab your bike today!</p>
+    </div>
 </section>
-	
-	<!--MONSTER CONFUSED/SCENE2-->
-<section>
-	<div id="scene2">
-		<img id="confused" class="wow bounceInUp" src="images/confused.png" alt="Confused Monster">
-		<img id="think" class="wow fadeInUp" src="images/howdoi.png" alt="Thinking Bubble">
-	</div>
-</section>	
-	<!--BUSPASSING THROUGH SCREEN/SCENE3-->
-<section>
-	<div id="scene3">
-		<img id="bus" class="wow slideOutLeft, wow slideInRight" src="images/bus.png" alt="Bus">
-		<img id="road1" src="images/road.png" alt="Road">
-		<img id="sign" src="images/signpost.png" alt="TUDublin">
-	</div>
+
+<div id="bike">
+	<img class="moveimg" src="img/pngfiles/postitscroll.png" alt="animation"/>
+	<img class="bike" src="img/pngfiles/cyclist_web2.png" alt="van"/>
+	<img class="wheel1" src="img/pngfiles/wheels1.png" alt="wheel"/>
+	<img class="wheel2" src="img/pngfiles/wheels2.png" alt="wheel"/>
+	<img class="imagepos7" src="img/pngfiles/stats1.png" alt="info"/>
+	<img class="imagepos8" src="img/pngfiles/pole.png" alt="info"/>
+</div>
+<!-- /Scene 1 -->
+<!-- Scene 2 -->
+<section id="panel2">
+	<div class="content">
+        <h1 id="fun">Benefits of Cycling</h1>
+        <p></p>
+    </div>
 </section>
-	
-	<!--MEETING A FRIEND/SCENE4-->
-<section>
-	<div id="scene4">
-		<img id="busstop" src="images/busstop.png" alt="Bus Stop">
-		<img id="speech2" class="wow slideInLeft" src="images/thereslarry.png" alt="Speech">
-		<img id="friend" class="wow slideInRight" src="images/larry.png" alt="Larry">
-		<img id="road" src="images/road.png" alt="Road">
-	</div>
+<div id="bike2">
+	<img class="bike2" src="img/pngfiles/cyclist_web.png" alt="van"/>
+	<img class="wheel12" src="img/pngfiles/wheels1.png" alt="wheel"/>
+	<img class="wheel22" src="img/pngfiles/wheels2.png" alt="wheel"/>
+	<img class="imagepos6" src="img/pngfiles/post_it_note_cycling-01.png" alt="info"/>
+</div>
+<!-- /Scene 2 -->
+<!-- Scene 3 -->
+<section id="panel3">
+	<div class="content">
+		<h1 id="fun2">Fitness Apps </h1>
+		<p class="s3text"></p>
+    </div>
 </section>
-	
-	<!--ASKFORHELP/SCENE5-->
-<section>
-	<div id="scene5">
-		<img id="busstop2" src="images/busstop.png" alt="bus stop">
-		<img id="speech3" class="wow bounce" src="images/help.png" alt="help">
-		<img id="friend2" src="images/larry.png" alt="Larry">
-		<img id="monster2" src="images/monster.png" alt="baby monster">
-		<img id="road3" src="images/road.png" alt="road">
-		<img id="ask" src="images/askafriend.png" alt="ask a friend">
-	</div>
+<div id="images3">
+	<img class="imagepos" src="img/pngfiles/fitness_apps.png" alt="animation"/>
+	<img class="imagepos1" src="img/pngfiles/post_it_note _ap-01.png" alt="van"/>
+</div>
+<!-- /Scene 3 -->
+<!-- Scene 4 -->
+<section id="panel4">
+	<div class="content">
+		<h1 id="fun3">Toxic Co2 Emissions</h1>
+    	<p></p>
+    </div>
 </section>
-	
-	<!--TOPUPPHONE/SCENE6-->
-<section>
-	<div id="scene6">
-		<img id="phone" src="images/phone.png" alt="Phone">
-		<img id="friendhand" src="images/larryhand.png" alt="Hand">
-		<img id="monsterhand" src="images/monsterhand.png" alt="Hand">
-		<img id="speech7" class="wow slideInRight" src="images/firstyouneedtotopitup.png" alt="Speech">
-		<img id="speech8" class="wow slideInLeft" src="images/ican.png" alt="Speech">
-	</div>
+<div id="car">
+	<img class="car" src="img/pngfiles/red_car.png" alt="van"/>
+<!--	<img class="wheel12" src="img/pngfiles/wheels1.png" alt="wheel"/>
+	<img class="wheel22" src="img/pngfiles/wheels2.png" alt="wheel"/> -->
+	<img id="fact4" class="fact4" src="img/pngfiles/exhaust_smoke_text-01.png" alt="van"/>
+	<p id="fact5" class="fact4"><br><br></p>
+</div>
+<!-- /Scene 4 -->
+<!-- Scene 5 -->
+<section id="panel5">
+	<div class="content">
+		<h2> </h2>
+    	<p></p>
+    </div>
 </section>
-	
-	<!--ENDSCENE/SCENE7-->
-<section>
-	<div id="scene7">
-		<img id="busstop3" src="images/busstop.png" alt="Bus Stop">
-		<img id="speech6" src="images/herecomes.png" alt="Speech">
-		<img id="friend3" src="images/larry.png" alt="larry">
-		<img id="monster3" src="images/monster.png" alt="baby monster">
-		<img id="road4" src="images/road.png" alt="road">
-		<img id="bus3" class="wow slideInRight" src="images/bus.png" alt="bus">
-	</div>
+<div id="images5">
+	<p><h1 id="fun4">Saving on your budget it's a win-win</h1></p>
+	<img class="imagepos3" src="img/pngfiles/post_it_note _save-01.png" alt="postit"/>
+</div>
+<div id="images4">
+	<img class="imagepos2" src="img/pngfiles/piggybank.png" alt="animation"/>
+	<img class="imagepos4" src="img/pngfiles/coin.png" alt="animation"/>
+</div>
+<!-- /Scene 5 -->
+<section id="panel6">
+	<div class="content">
+		<h1 id="fun5">Additional Information on Cycling</h1>
+    	<p></p>
+		
+    </div>
 </section>
-	
-	<!--BUSPASSING/SCENE8-->
-<section>
-	<div id="scene8">
-		<img id="bus2" class="wow slideOutRight" src="images/bus2.png" alt="bus">
-		<img id="road2" src="images/road.png" alt="road">
-		<img id="info" src="images/visit.png" alt="information">
-		<img id="download" class="wow bounce" src="images/freetodownload.png" alt="Speech">
-	</div>
-	<footer><h2 id="copy">&copy; <br>By <br> Nicole Goodman <br>and <br>Esmee MacPherson</h2></footer>
-</section>
+	<a href="https://instaud.io/_/3kM0.mp3" target="blank_"><img id="audio" src="img/pngfiles/speaker.png" alt="audio file"></a>
+<div id="bike6">
+	<img class="bike6" src="img/pngfiles/cyclist_web.png" alt="van"/>
+	<img class="wheel13" src="img/pngfiles/wheels1.png" alt="wheel"/>
+	<img class="wheel23" src="img/pngfiles/wheels2.png" alt="wheel"/>
+	<img class="imagepos9" src="img/pngfiles/textsign.png" alt="info"/>
+	<img class="imagepos10" src="img/pngfiles/pole.png" alt="info"/>
+</div>
+<!-- /Scene 6 -->
+
+<!-- Parallax Level 2 Images -->
+<div id="parallax-bg2">
+	<img id="bg2-1" src="img/pngfiles/cloud.png" alt="cloud">
+	<img id="bg2-2" src="img/pngfiles/cloud1.png" alt="cloud">
+	<img id="bg2-3" src="img/pngfiles/cloud2.png" alt="cloud">
+	<img id="bg2-4" src="img/pngfiles/cloud3.png" alt="cloud">
+	<img id="bg2-5" src="img/pngfiles/cloud1.png" alt="cloud">
+</div>
+<!-- / Parallax Level 2 Images -->
+
+<!-- Parallax Level 1 Images -->
+<div id="parallax-bg1">
+	<img id="bg1-1" src="img/pngfiles/cloud2.png" alt="cloud">
+	<img id="bg1-2" src="img/pngfiles/cloud3.png" alt="cloud">
+	<img id="bg1-3" src="img/pngfiles/cloud.png" alt="cloud">
+	<img id="bg1-4" src="img/pngfiles/cloud1.png" alt="cloud">
+</div>
+<!-- / Parallax Level 1 Images -->
 </body>
+
 </html>
